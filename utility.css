@@ -1,0 +1,28 @@
+.border{
+    border: 1px solid rgb(13, 171, 207) ;
+    box-shadow: 0px 0px 10px 0px rgb(13, 171, 207) ;
+    /* margin: 4px; */
+    /* backdrop-filter: blur(15px); */
+}
+.flex{
+    display: flex;
+}
+.justifyy-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+
+.headcolor{
+    padding:10px;
+    height: 1.3em;
+    margin: 2px;
+   
+    width: 17em;
+    color:white;
+    /* border: 1px solid rgb(13, 171, 207) ;
+    box-shadow:  inset0px 0px 10px 0px rgb(13, 171, 207) ; */
+ height:1em;
+    font-weight: 700;
+}
