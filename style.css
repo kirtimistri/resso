@@ -30,7 +30,12 @@ body{
     width: 252vmin;
     height:50vmax;
     height: 99vmin;
-
+    background: rgba(60, 79, 103, 0.2);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(170, 172, 176, 0.5);
     
 }
 .left ul li{
@@ -56,17 +61,27 @@ img.logo{
     padding: 5px;
     margin:  0px 20px;
     margin-top: 10px;
-
+    /* background-color: #0b325f; */
+    /* background-color: #032041; */
+    /* background:linear-gradient(135deg left,rgb(255,255,255,0.1),rgb(255,255,255, 0)); */
+    /* border: 1px solid rgb(12, 88, 142); */
     height: 9em;
     width: 16em;
     font-size: 20px;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px rgb(13, 171, 207) ;
-    border:1px solid  rgb(13, 171, 207) ;
+    background: rgba(60, 79, 103, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(170, 172, 176, 0.5);
+    /* box-shadow: 0px 0px 20px 0px rgb(13, 171, 207) ;
+    border:1px solid  rgb(13, 171, 207) ; */
     /* font-weight: bold; */
 }
 .textandicon ul li{
     display: flex;
+    
     gap: 30px;
 }
 .libtext{
@@ -114,18 +129,22 @@ img.logo{
     /* backdrop-filter: blur(10px); */
     /* background-image:url(/bg.img); */
     /* background-size: cover; */
+    
 }
 .searchbar{
     display: flex;
     align-items: center;
     justify-content:space-around;
-    justify-items: left;
-    gap: 14em;
-    margin: 15px;
-    height:8vh;
-    width:78em;
-    border-radius: 30px;
-    cursor: pointer;
+    /* justify-items: left; */
+    /* gap: 14em; */
+    /* margin: 15px; */
+    background: rgba(60, 79, 103, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(170, 172, 176, 0.5);
+    height:15vh;
+    width:79.5vw;
 }
 input{
     border-radius: 30px;
@@ -145,7 +164,7 @@ input{
 .searchwithicon{
     display: flex;
     /* border: 2px solid white ; */
-    gap: 2em;
+    gap: 1em;
 }
 .hamburger{
     display: none;
@@ -162,18 +181,20 @@ input{
     flex-wrap: wrap;
     /* gap: 2em; */
     /* justify-content: space-around; */
+    /* background: #031b37; */
     background-image: linear-gradient(to top,rgb(15, 13, 26),rgb(24, 11, 75),rgb(20, 54, 101));
     margin: 15px;
+    /* background-image:linear-gradient(to top ,rgb(41, 9, 71),rgb(64, 27, 99),rgb(24, 11, 75),rgb(3, 19, 42),rgb(45, 91, 97)); */
     /* height:auto; */
     height: 99vh;
     overflow: scroll;
+    
     width:78vw;
     border-radius: 20px;
     padding-bottom: 5vh;
     /* background:rgba(32,43,88,255); */
-    border: 1px solid rgb(84, 11, 174);
-    /* backdrop-filter: blur(30px); */
-    box-shadow: 0px 0px 40px 2px rgb(84, 11, 174) ;
+    /* border: 1px solid rgb(84, 11, 174);
+    box-shadow: 0px 0px 20px 0px rgb(100, 13, 207) ; */
 }
 .uppericon {
    margin-left:15px; 
@@ -193,10 +214,23 @@ input{
     margin: 20px;
     height: 21em;
     position: relative;
-    border: 1px solid rgb(84, 11, 174);
-    box-shadow: 0px 0px 20px 0px rgb(115, 15, 237) ;
+    background-color: #06274e;
+    /* background:linear-gradient(135deg left,rgb(255,255,255,0.1),rgb(255,255,255, 0)); */
+    border: 1px solid rgb(12, 88, 142);
+    box-shadow: 0px 0px 20px 0px rgb(255,255,255, 0) ;
+    /* border: 1px solid rgb(84, 11, 174);
+    box-shadow: 0px 0px 20px 0px rgb(100, 13, 207) ; */
+backdrop-filter: blur(18px);
     border-radius: 20px;
-    /* backdrop-filter: blur(10px); */
+    /* From https://css.glass */
+background: rgba(60, 79, 103, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(170, 172, 176, 0.5);
+    /* background-attachment: blur(10px); */
+
     width: 15em;
     transition: all 0.9s;
 }
@@ -204,8 +238,8 @@ input{
     background-image: linear-gradient(to top,rgb(15, 13, 26),rgb(24, 11, 75),rgb(32, 85, 159));
     box-shadow: 0px 0px 20px 0px rgb(13, 171, 207) ;
     cursor: pointer;
-    --a:1;
-    border:1px solid  rgb(13, 171, 207) ;}
+    border:1px solid  rgb(13, 171, 207) ;
+    --a:1;}
 .cardimg{
     margin: auto;
     border-radius: 10px;
@@ -230,7 +264,44 @@ input{
     right: 43px;
     opacity: 1;
 }
+/* login and signup */
+.signupbtn{
+    /* background-color: rgb(35, 35, 35); */
+    color: #b3b3b3;
+    font-weight: bold;
+    border:none;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+}
 
+.signupbtn:hover{
+    font-size: 1.01rem;
+    color: white;
+}
+
+.buttons > *{
+    margin: 0px 18px;
+}
+
+.loginbtn{
+    background-color: white;
+    border-radius: 22px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    padding: 12px;
+    width: 5.1rem;
+    cursor: pointer;
+}
+
+.loginbtn:hover{
+    padding: 14px;
+    border-radius: 30px;
+    width: 5.12rem;
+}
 .playbar{
     /* border: 1px solid white; */
     position:fixed;
@@ -240,8 +311,9 @@ input{
     border-radius: 10px;
     /* font-size: 1em; */
     margin: 10px 0px ;
-    box-shadow: inset 0px 0px 20px 0px rgb(13, 171, 207);
-    background-image: linear-gradient(to left,rgb(24, 11, 75),rgb(33, 97, 185),rgb(31, 161, 164),rgb(24, 11, 75));
+    background-color: #084d9c;
+    /* box-shadow: inset 0px 0px 20px 0px rgb(13, 171, 207); */
+     /* background-image: linear-gradient(to left,rgb(24, 11, 75),rgb(33, 97, 185),rgb(31, 161, 164),rgb(24, 11, 75));  */
 }
 
 .seekbar{
@@ -264,7 +336,7 @@ input{
     border: 1px solid rgb(13, 171, 207);
     /* margin:5px; */
     box-shadow:  0px 0px 18px 8px rgb(13, 171, 207);
-    background-color: rgb(13 215 233);
+    background-color: rgb(120, 197, 214);
     /* margin: 2px; */
     border-radius:50px ;
     transition: left 0.5s;
@@ -314,7 +386,7 @@ button{
 }
 h1{
     font-size: 4em;
-    padding-bottom:20px;
+    /* padding-bottom:20px; */
     font-weight: bold;
     margin-left:2em;
 }
@@ -325,12 +397,12 @@ h1{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(6, 1, 23);
+  background: rgb(7, 24, 29);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(91, 6, 113);
+  background: rgb(4, 15, 77);
 }
 
 /* Handle on hover */
@@ -345,12 +417,21 @@ h1{
  height: 60vh;
  border-radius: 10px;
  /* max-height:30em ; */
- overflow: scroll;
- overflow-x: hidden;
+ overflow-y: scroll;
+ /* overflow-x: hidden; */
  width: 17em;
- box-shadow: 0px 0px 10px 0px rgb(13, 171, 207) ;
- /* border:1px solid  rgb(13, 171, 207) ; */
+ /* background-color: #032041; */
+ /* background:linear-gradient(135deg left,rgb(255,255,255,0.1),rgb(255,255,255, 0)); */
+ /* border: 1px solid rgb(12, 88, 142); */
+ /* box-shadow: 0px 0px 10px 0px rgb(13, 171, 207) ; */ 
+ /* border:1px solid  rgb(13, 171, 207) ;  */
  /* border:1px solid  red ; */
+ background: rgba(60, 79, 103, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(170, 172, 176, 0.5);
 }
 .mysongs ul li{
     /* list-style-type: decimal; */
@@ -365,14 +446,25 @@ padding: 2px;
     cursor:pointer;
     /* font-size: 1em; */
     /* color:; */
-    box-shadow: inset 0px 0px 10px 0px rgb(13, 171, 207) ;
-    border:1px solid  rgb(13, 171, 207) ;
+    background-color: #073569;
+    /* box-shadow: inset 0px 0px 10px 0px rgb(13, 171, 207) ; */
+    border:1px solid  rgb(13, 171, 207) ; 
     border-radius: 10px;
+    background: rgba(60, 79, 103, 0.2);
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(170, 172, 176, 0.5);
     padding: 12px ;
     margin: 5px;
 }
 .mysongs ul li:hover{
-       background-image: linear-gradient(to top,rgb(15, 13, 26),rgb(24, 11, 75),rgb(32, 85, 159));
+    background:rgb(12, 78, 135) ; 
+    box-shadow: 0px 0px 10px 0px rgb(13, 171, 207) ;
+    cursor: pointer;
+    border:1px solid  rgb(13, 171, 207);
+    background-image: linear-gradient(to top,rgb(24, 11, 75),rgb(32, 85, 159));
 }
 
 .info{
@@ -449,10 +541,7 @@ padding: 2px;
     }
     input{
         height:3em ;
-        width: 10em;
-    }
-    .searchbar{
-        gap: 10em;
+        width: 7em;
     }
     .uppericon{
         /* margin:10px; */
@@ -460,7 +549,8 @@ padding: 2px;
         width: 80px;
     }
     .searchbar{
-      width:50vw ;
+      width:100%;
+      /* gap: 10em; */
     }
     .hamburger{
         display:block;
@@ -469,7 +559,7 @@ padding: 2px;
     .card{
         /* margin: 20px; */
         height: 24em;
-        width: 17em;
+        width: 16em;
     }
     .cardimg{
         height: 14em;

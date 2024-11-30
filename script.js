@@ -22,8 +22,8 @@ function secondsToMinutesSeconds(seconds) {
 
  async function getsongs(folder) {
   currentfolder=folder;
-    // let a = await fetch(`http://127.0.0.1:5500/${folder}/`)
-    let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
+    // let a = await fetch(`/${folder}/`)
+    let a = await fetch(`/${folder}/`);
     let response =await a.text();
     // console.log(response);
     let div = document.createElement("div")
@@ -59,6 +59,7 @@ function secondsToMinutesSeconds(seconds) {
         
           // console.log(e.querySelector(".info").firstElementChild.innerHTML)
           playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())
+          // playMusic(songs[0],true) 
       }
       )
    })
@@ -78,7 +79,7 @@ if(!pause){
 }
  
 async function displayAlbums() {
-  let a = await fetch(`http://127.0.0.1:5500/songs/`);
+  let a = await fetch(`/songs/`);
   let response =await a.text();
   let div = document.createElement("div")
   div.innerHTML=response;
@@ -97,7 +98,7 @@ async function displayAlbums() {
 
      console.log(e.href.split("/").slice(-2)[1])
      //get the metadeta of folder
-     let a = await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`);
+     let a = await fetch(`/songs/${folder}/info.json`);
      let response =await a.json();
     //  console.log(response);
      cardcontainer.innerHTML=cardcontainer.innerHTML+`
@@ -119,7 +120,7 @@ async function displayAlbums() {
      // console.log(e)
      console.log(item,item.currentTarget.dataset)
      await getsongs(`songs/${item.currentTarget.dataset.folder}`);
-     
+     playMusic(songs[0]);
      
      
     })
@@ -133,7 +134,7 @@ async function main(){
      
    await getsongs("songs/Hindi");
     // plays music when doucument is running firstly
-    // playMusic(songs[0],true) 
+    playMusic(songs[0],true) 
     on.src="pause.svg"
     //Display all songs album on page
     displayAlbums()

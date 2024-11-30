@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-evenly;
+    /* justify-content: center; */
+    background-image:linear-gradient(to bottom right,black,rgb(9, 13, 70),rgb(15, 100, 153),rgb(90, 184, 197),rgb(9, 13, 70));
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: center;
+    /* border: 2px solid black; */
+    height:100vh;
+    width:99.5vw;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+    
+    width:99.5vw;
+}
+.container img{
+    height: 40vh;
+    width:99.5vw;
+}
+.lyrics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black;
+    color:black; */
+    height:62vh;
+    width:85vw;
+}
+.lyrics img{
+    height: 71vh;
+     width: 99.5vw;
+
+}
+.left{
+    display: flex;
+    justify-content:end;
+    gap: 2em;
+    /* border: 2px solid black;
+    color:black; */
+    margin: 20px;
+    height:12vh;
+    width:30vw;
+}
+.right{
+    display: flex;
+    /* border: 2px solid black;
+    color:black; */
+    margin: 20px;
+    height:12vh;
+    width:30vw;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.LCS{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* flex-direction: column; */
+    /* margin: 20px; */
+    /* border: 2px solid black;
+    color:black; */
+    height:10vh;
+    width:99.5vw;
+}
+.bottom{
+    position: absolute;  
+    bottom: 0;
+    /* border: 2px solid black; */
+    /* color:black; */
+    height:8vh;
+    width:99.5vw;
+}
+.seekbar{
+    /* border: 2px solid blue; */
+    height: 6px;
+    width: 99%;
+    margin:0.8em;
+    border-radius: 10px;
+    background-color:rgb(2, 28, 64);
+    /* border: 1px solid rgb(13, 171, 207); */
+    position: absolute;
+    bottom: 5em;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    left: 0%;
+    position: relative;
+    bottom: 2px;
+    /* border: 1px solid rgb(13, 171, 207); */
+    /* margin:5px; */
+    box-shadow:  0px 0px 18px 8px rgb(13, 171, 207);
+    background-color: rgb(120, 197, 214);
+    /* margin: 2px; */
+    border-radius:50px ;
+    transition: left 0.5s;
+}
+.bottomicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+}
